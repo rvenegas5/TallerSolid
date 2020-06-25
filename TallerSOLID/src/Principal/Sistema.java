@@ -20,6 +20,7 @@ public class Sistema {
         // Finalmente mostrar el precio final de cada uno
         LecheEntera leche = new LecheDeslactosada();
         ManejadorDeLeche mnj_leche = new ManejadorDeLeche();
+        ManejadorDePrecio mnj_precio = new ManejadorDePrecio();
         
         // Producir Helado
         Helado helado_vainilla = new Helado("Vainilla");

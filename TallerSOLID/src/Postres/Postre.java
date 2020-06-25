@@ -22,12 +22,6 @@ public class Postre {
         this.sabor = sabor;
     }
     
-    public double calcularPrecioFinal(){
-        double precioFinal;
-        precioFinal=(precioParcial+(precioParcial*0.12))+(aderezos.size()*0.50);
-        return precioFinal;
-    }
-    
     public ArrayList<Aderezo> getAderezos() {
         return aderezos;
     }
@@ -39,9 +33,5 @@ public class Postre {
     public void quitarAderezo(Aderezo aderezo){
         aderezos.remove(aderezo);
     }
-    
-    
-    public String showPrecioFinal(){
-        return "Precio Final: $ " + calcularPrecioFinal();
-    }
+     
 }
