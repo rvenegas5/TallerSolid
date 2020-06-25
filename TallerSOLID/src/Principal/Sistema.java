@@ -5,6 +5,7 @@
  */
 package Principal;
 import Adicionales.Aderezo;
+import Adicionales.Crema;
 import Postres.*;
 import Procesos.*;
 import Leche.*;
@@ -23,16 +24,17 @@ public class Sistema {
         
         // Producir Helado
         Helado helado_vainilla = new Helado("Vainilla");
-        helado_vainilla.anadirAderezo(Aderezo.CREMA);
-        helado_vainilla.anadirAderezo(Aderezo.FRUTILLA);
+        Aderezo aderezo = null;
+        helado_vainilla.anadirAderezo(aderezo);
+        helado_vainilla.anadirAderezo(aderezo);
         System.out.println(helado_vainilla);
 //        mnj_leche.cambiarTipoLeche(leche, helado_vainilla);
         System.out.println(helado_vainilla.showPrecioFinal());
         
         // Producir Pastel
         Pastel pastel_chocolate = new Pastel("Chocolate");
-        pastel_chocolate.quitarAderezo(Aderezo.CREMA);
-        pastel_chocolate.anadirAderezo(Aderezo.FRUTILLA);
+        pastel_chocolate.quitarAderezo(aderezo);
+        pastel_chocolate.anadirAderezo(aderezo);
         System.out.println(pastel_chocolate);
 //        mnj_leche.cambiarTipoLeche(leche, pastel_chocolate);
         System.out.println(helado_vainilla.showPrecioFinal());
