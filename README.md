@@ -20,3 +20,6 @@ crear una clase padre llamada Postre de la cual extenderá cualquier postre que 
 solo será necesario modificar la clase padre sin alterar las clases hijas.
 
 - **Literal 2)**  La clase OperacionesAderezo violaba el Open-Closed Principle(OCP), debido a que solo implementaba dos métodos para dos clases en especifico(Pastel y Helado), si deseabamos añadir un nuevo postre y agregarle o quitar un aderezo, debiamos implementar dos nuevos métodos para esa clase en concreto. Debido a esto se decidió eliminar la clase OperacionesAderezo y implementar dos métodos adicionales en la clase padre(método para agregar un aderezo y para quitar un aderezo), haciendo esto logramos que se cumpla el OCP, ya que si queremos agregar o quitar un aderezo de un nuevo postre simplemente llamamos al método de la clase padre.
+
+- **Literal 3)** La clase Postre violaba el Single Responsability Principle (SRP) ya que también se encargaba del manejo del precio final y de la presentación del mismo.
+Por tanto, decidimos crear en el paquete Procesos la clase ManejoDePrecios para que tenga como única responsabilidad el manejo de los precios.
