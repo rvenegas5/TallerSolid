@@ -19,7 +19,8 @@ public class Helado extends Postre{
         precioParcial = 7.85;
     }
    
-    
-    
-    
+    @Override
+    public String toString() {
+        return "Helado{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
+    }
 }

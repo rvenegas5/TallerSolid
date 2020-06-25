@@ -19,4 +19,8 @@ public class Pastel extends Postre{
         precioParcial = 15.55;
     }
     
+    @Override
+    public String toString() {
+        return "Pastel{" + "sabor=" + sabor + ", precioParcial=" + precioParcial + ", aderezos=" + aderezos + '}';
+    }
 }
