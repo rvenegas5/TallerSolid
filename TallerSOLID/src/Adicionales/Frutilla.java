@@ -10,10 +10,13 @@ package Adicionales;
  * @author micha
  */
 public class Frutilla extends Aderezo{
-
+    public Frutilla(){
+        setNombre();
+    }
+    
     @Override
-    void setNombre(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    void setNombre() {
+        super.nombre= "Frutilla";
     }
     
 }

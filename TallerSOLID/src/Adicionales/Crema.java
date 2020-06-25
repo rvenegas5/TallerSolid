@@ -10,10 +10,14 @@ package Adicionales;
  * @author micha
  */
 public class Crema extends Aderezo{
-
+    
+    public Crema(){
+        setNombre();
+    }
+    
     @Override
-    void setNombre(String nombre) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    void setNombre() {
+        super.nombre= "Crema";
     }
     
 }

@@ -10,13 +10,13 @@ package Adicionales;
  * @author Pedro Mendoza
  */
 public abstract class Aderezo {
-    private String nombre;
+    protected String nombre;
     
-    abstract void setNombre(String nombre);
+    abstract void setNombre();
 
     @Override
     public String toString() {
-        return "Aderezo{" + "nombre=" + nombre.toUpperCase() + '}';
+        return nombre.toUpperCase();
     }
     
     
