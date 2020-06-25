@@ -33,5 +33,26 @@ public class Postre {
     public void quitarAderezo(Aderezo aderezo){
         aderezos.remove(aderezo);
     }
-     
+
+    public String getSabor() {
+        return sabor;
+    }
+
+    public double getPrecioParcial() {
+        return precioParcial;
+    }
+
+    public void setSabor(String sabor) {
+        this.sabor = sabor;
+    }
+
+    public void setPrecioParcial(double precioParcial) {
+        this.precioParcial = precioParcial;
+    }
+
+    public void setAderezos(ArrayList<Aderezo> aderezos) {
+        this.aderezos = aderezos;
+    }
+    
+    
 }
