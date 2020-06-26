@@ -15,12 +15,11 @@ import java.util.ArrayList;
  */
 public class Sistema {
     public static void main(String [ ] args){
-        // Producir un helado de vainilla y una torta de chocolate, 
-        // a ambos agregarles CREMA y FRUTILLAS
-        // y cambiar el tipo de leche por Leche Descremada
-        // Finalmente mostrar el precio final de cada uno
+        // Producir un helado de vainilla y una torta de chocolate.
+        // a ambos agregarle CREMA y FRUTILLAS
+        // y cambiar el tipo de leche a deslactosada
         ArrayList<Postre> arrPostres = new ArrayList<>();
-        ManejadorDeLeche mnj_leche = new ManejadorDeLeche(new LecheDescremada());
+        ManejadorDeLeche mnj_leche = new ManejadorDeLeche(new LecheDeslactosada());
         
         // Producir Helado
         Postre helado_vainilla = new Helado("Vainilla");

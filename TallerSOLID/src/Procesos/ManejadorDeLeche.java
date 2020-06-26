@@ -4,9 +4,6 @@
  * and open the template in the editor.
  */
 package Procesos;
-
-import Leche.LecheDeslactosada;
-import Leche.LecheDescremada;
 import Leche.LecheEntera;
 import Postres.*;
 
@@ -21,8 +18,13 @@ public class ManejadorDeLeche {
         lecheCambio = Leche;
     }
     public void cambiarTipoLeche(Postre postre){
-        if(!(postre instanceof Pastel)){
-            System.out.println("Cambiando tipo de leche a descremada");
+        if(postre instanceof Pastel){
+            System.out.println("¡No es posible usar leche deslactosada!");
+            System.out.println("¡Cambiando tipo de leche a descremada!");
+        }
+        else
+        {
+            System.out.println("¡Usando leche deslactosada!");
         }
     }
     
